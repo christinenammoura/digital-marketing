@@ -169,5 +169,53 @@ nav ul li a:hover {
     width: 50px;
     height: 50px;
 }
+/*partner?*/
+.why-partner {
+    padding: 40px 20px;
+    background: linear-gradient(150deg, #21DADB, #4CAED9); /* Softer gradient */
+    color: #f0f0f0; /* Light grey for better readability */
+    text-align: center;
+    border-radius: 8px;
+}
 
+.why-partner h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: black; /* Softer blue for the title */
+}
+
+.benefits-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.benefit {
+    background: #35A4C4; /* Muted blue */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(45% - 20px);
+    min-width: 250px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.benefit h3 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: #E8F7FB; /* Light, soft color for titles */
+}
+
+.benefit p {
+    font-size: 0.95em;
+    line-height: 1.5;
+    color: #f8f8f8; /* Light grey */
+}
+
+.benefit:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
 
