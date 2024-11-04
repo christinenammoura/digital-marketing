@@ -18,6 +18,7 @@
 
 body {
     font-family: Arial, sans-serif;
+    color: black;
    
 }
 
@@ -27,6 +28,11 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    z-index: 1;
+    
 }
 
 .logo {
@@ -54,6 +60,8 @@ nav ul li a:hover {
     color: #4D94E6;
 }
 
+/*hero*/
+
 .container{
     display: flex;
     align-items: center;
@@ -74,9 +82,7 @@ nav ul li a:hover {
     gap: 10px; 
 }
 
-h2 {
-    color: #4D94E6;
-}
+
 
 .box {
     flex: 1; 
@@ -89,13 +95,16 @@ h2 {
     text-align: center;
     box-shadow: 0 4px 8px rgba(239, 239, 239, 0.2); 
 }
-
+.box p{
+    padding: 20px;
+    color: white;
+}
 .box-left {
-    background: #73E1FF; 
+    background: #4D94E6; 
 }
 
 .box-right {
-    background: #8AB7EB; 
+    background: #4D94E6; 
 }
 
 .btn-cta{
@@ -107,9 +116,58 @@ h2 {
 
 .cta {
     display: inline-block;
-    background: #4D94E6;
+    background: #35BBDF;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
 }
+
+/*expertise*/
+
+.title{
+    text-align: center;
+    padding: 20px;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 cards per row */
+    gap: 20px; /* Space between the cards */
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.card {
+    background: #83BFD0; 
+    padding: 20px;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    transform: translateY(0); 
+}
+
+
+.card:nth-child(even) {
+    transform: translateY(-20px); 
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card h3{
+    padding: 10px;
+    color: #DDEEF2;
+
+}
+
+.card img{
+    width: 50px;
+    height: 50px;
+}
+
+
