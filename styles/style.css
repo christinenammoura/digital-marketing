@@ -23,7 +23,7 @@ body {
 }
 
 .header {
-    background: linear-gradient(150deg, #94E1E1 30%, #83BFD0 100%);
+    background: linear-gradient(150deg, #94E1E1 30%, #21DADB 100%);
     padding: 1rem;
     display: flex;
     justify-content: space-between;
@@ -223,7 +223,7 @@ nav ul li a:hover {
 
 .what-we-deliver-methodology {
     display: flex;
-    gap: 40px; /* Gap between left and right sections */
+    gap: 40px; 
     padding: 40px 20px;
     background: linear-gradient(150deg, #F5FAFE, #E1EFF8);
     border-radius: 12px;
@@ -234,12 +234,12 @@ nav ul li a:hover {
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
-    gap: 40px; /* Add gap between the sections */
+    gap: 40px; 
 }
 
 .left-section, .right-section {
-    flex: 1 1 calc(48% - 20px); /* Adjust width and create space between cards */
-    margin: 0 10px; /* Space on the sides */
+    flex: 1 1 calc(48% - 20px); 
+    margin: 0 10px; 
     padding: 30px;
     background: white;
     border-radius: 12px;
@@ -278,5 +278,52 @@ nav ul li a:hover {
         flex: 1 1 100%; 
         margin-bottom: 20px; 
     }
+}
+
+/*let's connect*/
+
+.connect-section {
+    padding: 40px 20px;
+    background: linear-gradient(150deg, #E1EFF8, #F5FAFE); /* Subtle gradient */
+    border-radius: 12px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.connect-section h2 {
+    color: black;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.connect-section p {
+    color: #3C89B7;
+    font-size: 1.2em;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto; 
+}
+
+.connect-section .link {
+    color: #21DADB;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.connect-section .link:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    background: #4D94E6; 
+    color: #ffffff;
+    text-align: center;
+    padding: 15px 0;
+    border-top: 4px solid #21DADB; 
+}
+
+.footer p {
+    margin: 0;
+    font-size: 1em;
 }
 
