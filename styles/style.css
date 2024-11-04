@@ -172,8 +172,8 @@ nav ul li a:hover {
 /*partner?*/
 .why-partner {
     padding: 40px 20px;
-    background: linear-gradient(150deg, #21DADB, #4CAED9); /* Softer gradient */
-    color: #f0f0f0; /* Light grey for better readability */
+    background: linear-gradient(150deg, #21DADB, #4CAED9); 
+    color: #f0f0f0; 
     text-align: center;
     border-radius: 8px;
 }
@@ -181,7 +181,7 @@ nav ul li a:hover {
 .why-partner h2 {
     margin-bottom: 20px;
     font-size: 2em;
-    color: black; /* Softer blue for the title */
+    color: black; 
 }
 
 .benefits-container {
@@ -193,7 +193,7 @@ nav ul li a:hover {
 }
 
 .benefit {
-    background: #35A4C4; /* Muted blue */
+    background: #35A4C4; 
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -205,17 +205,78 @@ nav ul li a:hover {
 .benefit h3 {
     margin-bottom: 10px;
     font-size: 1.5em;
-    color: #E8F7FB; /* Light, soft color for titles */
+    color: #E8F7FB; 
 }
 
 .benefit p {
     font-size: 0.95em;
     line-height: 1.5;
-    color: #f8f8f8; /* Light grey */
+    color: #f8f8f8; 
 }
 
 .benefit:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/*deliver*/
+
+.what-we-deliver-methodology {
+    display: flex;
+    gap: 40px; /* Gap between left and right sections */
+    padding: 40px 20px;
+    background: linear-gradient(150deg, #F5FAFE, #E1EFF8);
+    border-radius: 12px;
+}
+
+.deliver-method-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    gap: 40px; /* Add gap between the sections */
+}
+
+.left-section, .right-section {
+    flex: 1 1 calc(48% - 20px); /* Adjust width and create space between cards */
+    margin: 0 10px; /* Space on the sides */
+    padding: 30px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.left-section:hover, .right-section:hover {
+    transform: translateY(-5px);
+}
+
+.what-we-deliver-methodology h2 {
+    color: black;
+    margin-bottom: 25px;
+    font-size: 2em;
+    text-align: center;
+}
+
+.titles-container .title-d, .methodology-steps .step h3 {
+    color: #3C89B7;
+    font-size: 1.3em;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-left: 4px solid #21DADB;
+    background: rgba(33, 218, 219, 0.1);
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.titles-container .title-d:hover, .methodology-steps .step h3:hover {
+    background: rgba(33, 218, 219, 0.2);
+}
+
+@media (max-width: 768px) {
+    .left-section, .right-section {
+        flex: 1 1 100%; 
+        margin-bottom: 20px; 
+    }
 }
 
