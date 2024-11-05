@@ -53,7 +53,7 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: white;
-    transition: color 0.3s;
+    /*transition: color 0.3s;*/
 }
 
 nav ul li a:hover {
@@ -87,7 +87,7 @@ nav ul li a:hover {
 .box {
     flex: 1; 
     padding: 20px;
-    color: white;
+    color: #4D94E6;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
@@ -97,14 +97,16 @@ nav ul li a:hover {
 }
 .box p{
     padding: 20px;
-    color: white;
+    color: #4D94E6;
 }
 .box-left {
-    background: #4D94E6; 
+    
 }
 
-.box-right {
-    background: #4D94E6; 
+.box-right img{
+    
+    width: 100%;
+    height: auto;
 }
 
 .btn-cta{
@@ -145,7 +147,7 @@ nav ul li a:hover {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
+    /*transition: transform 0.3s, box-shadow 0.3s;*/
     transform: translateY(0); 
 }
 
@@ -172,7 +174,7 @@ nav ul li a:hover {
 /*partner?*/
 .why-partner {
     padding: 40px 20px;
-    background: linear-gradient(150deg, #21DADB, #4CAED9); 
+    background: linear-gradient(150deg, #94E1E1 30%, #21DADB 100%);
     color: #f0f0f0; 
     text-align: center;
     border-radius: 8px;
@@ -199,7 +201,7 @@ nav ul li a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     flex: 1 1 calc(45% - 20px);
     min-width: 250px;
-    transition: transform 0.3s, box-shadow 0.3s;
+    /*transition: transform 0.3s, box-shadow 0.3s;*/
 }
 
 .benefit h3 {
@@ -244,7 +246,7 @@ nav ul li a:hover {
     background: white;
     border-radius: 12px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s;
+    /*transition: transform 0.3s;*/
 }
 
 .left-section:hover, .right-section:hover {
@@ -266,19 +268,14 @@ nav ul li a:hover {
     border-left: 4px solid #21DADB;
     background: rgba(33, 218, 219, 0.1);
     border-radius: 5px;
-    transition: background 0.3s;
+    /*transition: background 0.3s;*/
 }
 
 .titles-container .title-d:hover, .methodology-steps .step h3:hover {
     background: rgba(33, 218, 219, 0.2);
 }
 
-@media (max-width: 768px) {
-    .left-section, .right-section {
-        flex: 1 1 100%; 
-        margin-bottom: 20px; 
-    }
-}
+
 
 /*let's connect*/
 
@@ -326,4 +323,56 @@ nav ul li a:hover {
     margin: 0;
     font-size: 1em;
 }
+
+
+@media (max-width: 768px) {
+    .left-section, .right-section {
+        flex: 1 1 100%; 
+        margin-bottom: 20px; 
+    }
+}
+
+@media (max-width: 1024px) {
+    .hero {
+        flex-direction: column; 
+        height: auto; 
+    }
+
+    .box {
+        margin-bottom: 20px; 
+    }
+
+    .cards-container {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+
+    .benefits-container, .deliver-method-container {
+        flex-direction: column; 
+        gap: 20px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .cards-container {
+        grid-template-columns: 1fr; 
+    }
+
+    .benefits-container .benefit,
+    .deliver-method-container .left-section,
+    .deliver-method-container .right-section {
+        flex: 1 1 100%; 
+        margin-bottom: 20px; 
+    }
+
+    .connect-section p {
+        font-size: 1em; 
+        padding: 10px;
+    }
+
+    nav ul li {
+        display: block; 
+        margin-bottom: 10px;
+    }
+}
+
 

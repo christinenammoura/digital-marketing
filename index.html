@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Isocial Lebanon-Digital Marketing Services</title>
     <link rel="stylesheet" href="./styles/style.css">
-    <script src="https://cdn.jsdelivr.net/npm/framer-motion@11.11.11/dist/framer-motion.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollTrigger.min.js"></script>
+
 </head>
 <body>
     <div class="header">
@@ -21,19 +23,21 @@
         </nav>
     </div>
 
-    <div class="container">
+    <div class="container" id="hero">
         <section class="hero">
 
             <div class="box box-left">
                 <h1>SEE LIFE FROM A DIFFERENT PERSPECTIVE</h1>
                 <p>We are symbol of Quality, Reliability and Success. With our expertise and skills in social media, we’re confident that we’ll be able to deliver the best digital marketing for you!</p>
+
+                <div class="btn-cta">
+                    <a href="#expertise" class="cta">Explore</a>
+                </div>
             
             </div>
             
-            <div class="box box-right">
-                 <h1>Welcome to isocial Lebanon</h1>
-                 <p>At isocial Lebanon, we specialize in transforming brands into compelling digital experiences. Our innovative marketing solutions are designed to enhance your market presence, foster genuine connections, and drive measurable results. Together, we can create something extraordinary.</p>
-                 
+            <div class="box-right">
+                 <img src="./assets/digitall.png">
             </div>
             
             
@@ -41,11 +45,9 @@
         
     </div>
 
-    <div class="btn-cta">
-        <a href="#expertise" class="cta">Explore Our Expertise</a>
-    </div>
+    
 
-    <section>
+    <section id="expertise">
         <h2 class="title">Our Expertise</h2>
         <div class="cards-container">
             <div class="card">
@@ -93,7 +95,7 @@
     </section>
 
 
-    <section class="why-partner">
+    <section class="why-partner" id="partner">
         <h2>Why Partner with Us?</h2>
         <div class="benefits-container">
             <div class="benefit">
@@ -119,7 +121,7 @@
         </div>
     </section>
 
-    <section class="what-we-deliver-methodology">
+    <section class="what-we-deliver-methodology" id="deliver">
         <div class="deliver-method-container">
             <!-- Left side: What We Deliver -->
             <div class="left-section">
@@ -133,7 +135,7 @@
             </div>
     
             <!-- Right side: Our Methodology -->
-            <div class="right-section">
+            <div class="right-section" id="methodology">
                 <h2>Our Methodology</h2>
                 <div class="methodology-steps">
                     <div class="step">
@@ -159,7 +161,7 @@
         </div>
     </section>
 
-    <section class="connect-section">
+    <section class="connect-section" id="contact">
         <h2>Let’s Connect!</h2>
         <p>
             Are you ready to elevate your brand and achieve your marketing goals? 
@@ -175,16 +177,8 @@
         <p>&copy; 2024 iSocial Lebanon. All Rights Reserved.</p>
     </footer>
     
-    
-    
-    
-    
-    
-
-
-
-   
 
     <script src="script.js"></script>
+    
 </body>
 </html>
